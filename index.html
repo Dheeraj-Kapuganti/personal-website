@@ -2,21 +2,68 @@
 <html>
 <head>
     <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #222;
+        }
+        .photo-box {
+            width: 150px;
+            height: 150px;
+            background: #ccc;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            text-decoration: none;
+            padding: 10px 15px;
+            color: white;
+            background: #333;
+            border-radius: 4px;
+        }
+        a:hover {
+            background: #555;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Photo placeholder (will replace later with actual image) -->
-    <div style="width:150px; height:150px; background:#ddd; border:2px solid #aaa; border-radius:50%; margin-bottom:15px;">
-        <!-- Photo will be inserted here -->
-    </div>
-
+<div class="container">
     <h1>Your Name</h1>
     <p>Roll No: XYZ123</p>
     <p>Semester: 3rd Semester</p>
     <p>CGPA: 8.5</p>
 
+    <div class="photo-box"></div>
+
     <h2>Current Semester Subjects</h2>
-    <table border="1" cellpadding="8" cellspacing="0">
+    <table>
         <tr>
             <th>S.No</th>
             <th>Subject Code</th>
@@ -24,21 +71,30 @@
         </tr>
         <tr>
             <td>1</td>
-            <td>CSE301</td>
-            <td>Operating Systems</td>
+            <td>CS301</td>
+            <td>Data Structures</td>
         </tr>
         <tr>
             <td>2</td>
-            <td>CSE302</td>
-            <td>Database Management Systems</td>
+            <td>MA302</td>
+            <td>Discrete Mathematics</td>
         </tr>
         <tr>
             <td>3</td>
-            <td>CSE303</td>
-            <td>Computer Networks</td>
+            <td>CS303</td>
+            <td>Database Management Systems</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>EC304</td>
+            <td>Digital Logic Design</td>
         </tr>
     </table>
-    <a href="previous_sem.html">View Previous Semester</a>
+
+    <center>
+        <a href="previous_sem.html">View Previous Semester</a>
+    </center>
+</div>
 
 </body>
 </html>

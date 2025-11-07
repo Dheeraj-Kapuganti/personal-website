@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Previous Semester Subjects</title>
+    <title>Previous Semester</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f2f2f2;
+            background: #eef2f3;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
             padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
         }
         h2 {
-            color: #333;
+            text-align: center;
+            color: #222;
         }
         table {
-            width: 60%;
+            width: 100%;
+            margin-top: 20px;
             border-collapse: collapse;
-            margin-top: 15px;
-        }
-        table, th, td {
-            border: 1px solid black;
         }
         th, td {
-            padding: 10px;
+            padding: 12px;
             text-align: center;
+            border: 1px solid #444;
         }
         a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 25px;
             text-decoration: none;
-            background: black;
+            padding: 10px 15px;
             color: white;
-            padding: 8px 12px;
+            background: #333;
             border-radius: 4px;
+        }
+        a:hover {
+            background: #555;
         }
     </style>
 </head>
 <body>
 
+<div class="container">
+
     <h2>Previous Semester Subjects</h2>
 
     <table>
         <tr>
-            <th>Serial No.</th>
+            <th>S.No</th>
             <th>Subject Code</th>
             <th>Subject Name</th>
         </tr>
@@ -66,7 +79,11 @@
         </tr>
     </table>
 
-    <a href="index.html">Go Back to Current Sem Page</a>
+    <center>
+        <a href="index.html">Go Back</a>
+    </center>
+
+</div>
 
 </body>
 </html>
